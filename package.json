@@ -1,0 +1,24 @@
+{
+  "name": "dirsync",
+  "version": "1.0.0",
+  "description": "Synchronise the contents of multiple directories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "directory",
+    "synchronise",
+    "file",
+    "storage",
+    "dir"
+  ],
+  "author": "Mike Dean",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "colors": "^1.3.3",
+    "commander": "^2.19.0",
+    "moment": "^2.23.0"
+  }
+}
