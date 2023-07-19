@@ -1,4 +1,4 @@
-import { rmdir, stat, unlink } from "node:fs/promises";
+import { mkdir, rmdir, stat, unlink } from "node:fs/promises";
 import { join } from "node:path";
 
 import { error, log } from "logging.js";
@@ -84,6 +84,7 @@ const compareDirectories = async (
     const destinationPath = join(destination.basepath, dir.name);
     if (!(await exists(destinationPath, true))) {
       log(`creating directory ${destinationPath}`);
+      await mkdir(destinationPath);
     }
 
     await compare(sourcePath, destinationPath, options);
