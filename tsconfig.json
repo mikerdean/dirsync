@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "isolatedModules": true,
+    "strict": true,
+    "target": "ES2021"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.test.ts"]
+}
