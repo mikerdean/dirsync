@@ -10,7 +10,7 @@ const main = async (): Promise<void> => {
   program
     .usage("[options] <source> <destination ...>")
     .option("-d, --dry-run", "enable dry run mode", false)
-    .option("-s, --secure", "enable secure file mode (slow)", false)
+    .option("-s, --secure", "enable secure file comparison (slow)", false)
     .option("-v, --verbose", "enable verbose log output", false);
 
   program.parse();
