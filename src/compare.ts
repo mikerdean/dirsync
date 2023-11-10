@@ -1,4 +1,4 @@
-import { mkdir, rmdir, stat, unlink } from "node:fs/promises";
+import { mkdir, rm, stat, unlink } from "node:fs/promises";
 import { join } from "node:path";
 
 import { error, log } from "logging.js";
@@ -99,7 +99,7 @@ const compareDirectories = async (
         `deleting directory ${destinationPath} because it does not exist in the source`,
       );
       if (!options.dryRun) {
-        await rmdir(destinationPath);
+        await rm(destinationPath, { force: true, recursive: true });
       }
     }
   }
